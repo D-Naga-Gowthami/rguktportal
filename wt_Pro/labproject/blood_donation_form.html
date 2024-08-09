@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blood_donation_form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">
+        <center><span>Blood Donatation Form</span></center>
+       <center> <form nmae="myForm" action="/action_page.php" onsubmit="return Form_validation()" method="post">
+           <input type="text" class="box" id="box1" onblur="myBlurFunction()"  placeholder="Enter your First Name" required="1"><label id="bb1">Invalid</label><br><br>
+            <input type="text" class="box" id="box2" onblur="myBlurFunc2()" placeholder="Enter your Last Name" required="1"><label id="bb2">Invalid</label><br><br>
+            <input type="email" class="box" id="box3" onblur="myemail()" placeholder="Enter your email address" required="1"><label id="e1">Invalid</label><br><br>
+            <input type="phonenumber" class="box" id="box4" onblur="myBlurFunction3()"  placeholder="Enter your Mobile Number" required="1"><label id="bb3">Invalid</label><br><br>
+            <label for="blood" class="label">Select your Blood Group:</label>
+            
+            <select name="blood" id="blood" required="1">
+                <option value="apos" class="seelct-box">A+</option>
+                <option value="aneg" class="seelct-box">A-</option>
+                <option value="bpos" class="seelct-box">B+</option>
+                <option value="bneg" class="seelct-box">B-</option>
+                <option value="abpos" class="seelct-box">AB+</option>
+                <option value="abneg" class="seelct-box">AB-</option>
+                <option value="opos" class="seelct-box">O+</option>
+                <option value="oneg" class="seelct-box">O-</option>
+            </select><br>
+            
+            <input type="submit" class="button" value="submit" name="submit">
+        </form></center>
+    </div>
+
+    <script>
+        function Form_validation(){
+            let x1=document.getElementById('box1').value;
+            let x2=document.getElementById('box2').value;
+            let x3=document.getElementById('box3').value;
+            if(x1=="" || x2=="" || x3==""){
+                alert("These boxes must be fill before submit");
+                return false;
+            }
+        }
+
+        function myBlurFunction() {
+            let x1=document.getElementById('box1');
+            let reg1=(/^[A-Za-z]+$/);
+            if(!reg1.test(x1.value)){
+                document.getElementById("bb1").style.visibility="visible";
+            }
+            else{
+                document.getElementById("bb1").style.visibility='hidden';
+            }
+
+        }
+
+        function myBlurFunc2(){
+            let x2=document.getElementById("box2");
+            let reg2=(/^[A-Za-z]+$/);
+            if(!reg2.test(x2.value)){
+                document.getElementById("bb2").style.visibility='visible';
+            }
+            else{
+                document.getElementById("bb2").style.visibility='hidden';
+            }
+        }
+
+        function myemail(){
+            let x3=document.getElementById("box3");
+            let reg3=/^([a-zA-Z0-9 \- \.]+)[@]([a-z]+)[\.][a-z]{2,3}$/;
+            if(!reg3.test(x3.value)){
+                document.getElementById("e1").style.visibility='visible';
+            }
+            else{
+                document.getElementById("e1").style.visibility='hidden';
+            }
+        }
+
+        function myBlurFunction3() {
+            let x4=document.getElementById("box4");
+            let reg4=/^[0-9]{10}$/;
+            if(!reg4.test(x4.value)){
+                document.getElementById("bb3").style.visibility="visible";
+            }
+            else{
+                document.getElementById("bb3").style.visibility='hidden';
+            }
+
+        } 
+    
+    </script>
+</body>
+
+</html>

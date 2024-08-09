@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container d-flex flex-row justify-content-center">
+      <div class="signup">
+        <form>
+          <h1 class="signupheading">Sign Up</h1>
+          <label for="first_name"><b>First Name:</b></label>
+          <input
+            type="text"
+            id="first_name"
+            placeholder="Gowthami"
+            name="first_name"
+            class="inputbox"
+          /><br /><br />
+          <label for="second_name"><b>Second Name:</b></label>
+          <input
+            type="text"
+            id="second_name"
+            name="second_name"
+            placeholder="Divi"
+            class="inputbox"
+          /><br /><br />
+          <label for="email"><b>Email:</b></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="inputbox"
+          /><br /><br />
+          <label for="password"><b>Password:</b></label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="inputbox"
+          /><br /><br />
+          <label for="conform_password"><b>Conform password:</b></label>
+          <input
+            type="password"
+            id="conform_password"
+            name="conform_password"
+            class="inputbox"
+          /><br /><br />
+          <label for="gender"><b>Gender:</b></label>
+          <input type="radio" id="gender" name="gender" class="radiobutton" />
+          <label for="gender">Male</label>
+          <input type="radio" id="gender" name="gender" />
+          <label for="gender">Female</label>
+          <input type="radio" id="gender" name="gender" />
+          <label for="gender">Other</label><br /><br />
+          <input
+            type="button"
+            name="button"
+            id="button"
+            value="Sign Up"
+            class="inputbox"
+            onclick="window.location.href='loginpage.html'"
+          />
+          <p>
+            Already have an account?
+            <a href="loginpage.html" class="textcolor">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

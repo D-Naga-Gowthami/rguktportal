@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  margin:0px;
+  height:100vh;
+  font-family: 'Roboto';
+}
+.signup{
+  background-color: #83c5e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 100px;
+  font-size: 20px;
+  width: 550px;
+}
+.inputbox{
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+}
+.signupheading{
+  text-align: center;
+  font-family: 'Caveat';
+  font-weight: bold;
+}
+.button{
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #c8e0df;
+  margin-bottom: 10px;
+}
+.textcolor{
+  color: purple;
+}
+

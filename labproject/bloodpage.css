@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.bloodimage{
+    height: 500px;
+    border-radius: 20px;
+}
+.totalcontainer{
+    background-color: whitesmoke;
+    padding: 50px;
+    height: 100vh;
+}
+.left-box{
+    background-color: white;
+    padding: 80px;
+    border-radius: 20px;
+    padding-top: 150px;
+}
+.button{
+    border: none;
+    color: white;
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border
+}
+.topsection{
+    background-color: red;
+    height: 13vh;
+    color: white;
+    text-align: center;
+}
+.text{
+    font-size: 40px;
+    font-family: 'caveat';
+    font-size: 50px;
+}
